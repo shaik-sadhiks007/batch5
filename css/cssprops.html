@@ -11,7 +11,7 @@
 
             color: red;
 
-            background-color: blue;
+            background-color: rgba(72, 72, 230, 0.7);
 
             text-align: start;
 
@@ -33,14 +33,16 @@
 
         } */
 
-        div {
+        .divTag {
             /* background-color: black; */
             color: blue;
 
             /* syntax */
             /* border: thickness solid color; */
 
-            border: 1px solid black;
+            border: 1px solid blue;
+
+            background: linear-gradient(to right,rgba(255,0,0,1),rgba(0,0,255,1));
 
             width: 300px;
 
@@ -49,6 +51,25 @@
             margin: 50px;
 
             padding: 50px;
+        }
+
+        #kohli {
+            width: 300px;
+            height: 200px;
+        }
+
+        #bg-image {
+
+            background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url("https://assets.nflxext.com/ffe/siteui/vlv3/cb72daa5-bd8d-408b-b949-1eaef000c377/web/IN-en-20250825-TRIFECTA-perspective_a3209894-0b01-4ddb-b57e-f32165e20a3f_large.jpg");
+
+            width: 100%;
+
+            height: 500px;
+
+            background-repeat: no-repeat;
+
+            background-size: cover;
+
         }
     </style>
 </head>
@@ -64,10 +85,26 @@
 
     <!-- box model  ===> giving the spaces -->
 
-    <div>
+    <div class="divTag">
         this is div tag
     </div>
 
+
+    <div>
+        <img src="../virat.webp" alt="virat" id="kohli">
+
+        <h1>virat kohli</h1>
+
+    </div>
+
+    <div id="bg-image">
+
+        <h1 style="color : blue">virat kohli</h1>
+
+    </div>
+
+
+    
 
 </body>
 

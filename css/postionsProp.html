@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>position Propeties</title>
+    <style>
+        body {
+            height: 1500px;
+        }
+
+        .box {
+            width: 300px;
+            height: 100px;
+        }
+
+        .staticProp {
+            background-color: rgb(75, 75, 221);
+        }
+
+        .relativeProp {
+            background-color: rgb(150, 74, 221);
+        }
+
+        .testing {
+            background-color: rgb(220, 27, 59);
+        }
+
+        .testing1 {
+            background-color: rgb(27, 220, 34);
+        }
+
+        .absoluteProp {
+            background-color: rgb(227, 212, 48);
+
+        }
+
+        .parent {
+            position: relative;
+        }
+
+        .fixedProp {
+            background-color: aquamarine;
+            position: fixed;
+            top: 0;
+            left: 100px;
+        }
+
+        .stickyProp {
+            background-color: rgb(60, 190, 237);
+            position: sticky;
+            top: 0px;
+            left: 150px
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <h1>
+        this is position properties
+    </h1>
+
+    <!-- position properties types ----
+
+    1. static --- default position given by html based on the order wise
+
+    2. relative ---- based on the static/default postion we will move the box
+
+    3. absolute ---- based on the relative position we will move the box
+
+    4. fixed ---- fixed means it will fixed at that position 
+
+    5. sticky ---- sticky act as fixed when u hit the given position
+    
+    -->
+
+
+    <div class="box staticProp">
+
+        static box
+
+    </div>
+
+
+    <div class="box relativeProp">
+
+        relative box
+
+    </div>
+
+    <div class="parent">
+
+
+        <div class="box absoluteProp">
+
+            absolute box
+
+        </div>
+
+    </div>
+
+    <div class="box testing1">
+
+        testing1 box
+
+    </div>
+
+    <div class="box fixedProp">
+
+        fixed box
+
+    </div>
+
+    <div class="box stickyProp">
+
+        sticky box
+
+    </div>
+    <div class="box testing">
+
+        testing2 box
+
+    </div>
+</body>
+
+</html>

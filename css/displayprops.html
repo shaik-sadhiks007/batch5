@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .testing {
+            color: blue;
+
+            border: 1px solid black;
+
+            width: 300px;
+
+            height: 100px;
+
+            /* text-align: center; */
+
+            display: flex;
+
+            justify-content: center;
+
+            align-items: center;
+
+        }
+
+        .ele {
+            border: 1px solid black;
+
+            /* display: inline; */
+
+            width: 300px;
+
+
+        }
+
+        .ele2 {
+            border: 1px solid black;
+
+            /* display: block; */
+
+            display: inline-block;
+            /* to make use of width/height for inline elements we have to use the inline-block property */
+
+            width: 300px;
+
+
+
+        }
+
+        .parent {
+
+            width: 500px;
+
+            height: 500px;
+
+            border: 1px solid black;
+
+            display: flex;
+            /* display flex will make the child to be in the x-axis */
+
+            justify-content: center;
+            /*  to change the position in the x-axis*/
+
+            align-items: center;
+            /*  to change the position in the y-axis*/
+
+            /* display: flex;
+
+            flex-direction: column;
+
+            justify-content: center;
+
+            align-items: center; */
+
+
+
+
+
+        }
+
+        .c1 {
+            width: 100px;
+
+            height: 30px;
+
+            background-color: blue;
+
+        }
+
+        .c2 {
+            width: 100px;
+
+            height: 50px;
+
+            background-color: red;
+
+        }
+
+        .c3 {
+            width: 100px;
+
+            height: 40px;
+
+            background-color: rgb(55, 255, 0);
+
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>this is display properties</h1>
+
+    <div class="testing">
+        testing
+    </div>
+
+    <!-- // display properties --- how u want to show the elements
+
+    1. display : block
+
+    2. display : inline
+    3. display : inline-block
+    4. display : flex 
+    5. dispaly : grid
+    
+    -->
+
+
+    <!-- <div class="ele">
+        block elements
+    </div>
+
+    <span class="ele2">
+
+        inline elements
+    </span> -->
+
+    <!-- <div class="parent">
+
+        <div class="c1">
+            ele 1
+        </div>
+
+        <div class="c2">
+            ele 2
+        </div>
+
+        <div class="c3">
+            ele 3
+        </div>
+
+    </div> -->
+
+
+    <!-- <div class="parent">
+
+        <span class="c1">
+            ele 1
+        </span>
+
+        <span class="c2">
+            ele 2
+        </span>
+
+        <span class="c3">
+            ele 3
+        </span>
+
+    </div> -->
+</body>
+
+</html>
