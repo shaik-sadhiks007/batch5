@@ -1,0 +1,76 @@
+what is github ?
+
+github is a open source platform --- website -- where we store the our code in online. 
+
+ex: github , gitlab
+
+what is git ?
+
+it is a tool which to use to interact with the github/gitlab
+
+
+advantages of using git ?
+
+1. git is a version control system --- 
+
+1.0
+
+1.1 
+
+1.2
+
+---- a team can work simultaneously
+
+installation --- 
+1. download the git from the browser
+
+2. create an account in the github
+
+3. we have to link the git and github ?
+
+---- 1. git config --global user.name "Your Name"
+	git config --global user.email "your-email@example.com"
+
+---- 2. using the source control in vscode
+
+
+
+what is repo/repository ? --- folder 
+
+
+steps to push the code ----- 
+
+1. git init  ----- you are initialized  the git 
+
+2. git add .  ------ you are trying to store all the files in github
+
+3. git commit -m "v1.0"  -----
+
+4. git branch main
+
+5. git remote add origin https://github.com/shaik-sadhiks007/github-testing.git
+
+6. git push origin main
+
+
+
+git init ---- u r saying track the all the files
+
+git add . -----  listing your frds name in list to the trip
+
+git commit ----- you are confirmed the trip like buyied tickets and started travelling to trip
+
+git remote ---- destination --- goa
+
+git push  ----- u reached goa 
+
+
+
+steps to update the github code
+
+git add .
+
+git commit -m "any message"
+
+git push origin main
+
