@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>non primitive data properties and functions</h1>
+
+    <script>
+
+
+        // obj fucntions
+        let student = {
+            name: 'sadhik',
+            class: 10
+        }
+
+
+
+        // update the value in the obj
+        student.class = 11
+
+
+        // retrieve the value in the obj
+        console.log(student.class, "class")
+
+
+        // let a = 5;
+
+
+        // a = 10
+
+
+        // console.log(a, 'a')
+
+
+        /// arrays functions
+
+
+        let names = ["sadhik", 'hemanth', 'bhanu']
+
+
+        console.log(names, 'array')
+
+
+        /// retrive the data from the array
+        console.log(names[0], 'student 1')
+
+        console.log(names[1], 'student 2')
+
+
+        // update the value in the array
+
+        names[0] = 'shravni'
+
+        console.log(names, 'updated array')
+
+
+
+        // how to add the elements into the array
+
+
+        // 1. using push --- adding in the end
+
+        names.push("varshini")
+
+        console.log(names, 'added array')
+
+        // 2. using unshift --- adding in the start
+
+
+        names.unshift("nikhil")
+
+        console.log(names, 'added array in the start')
+
+
+        // how to delete the elements in the array
+
+
+        // 1. using pop ---- if u want to delete the last element
+
+        // names.pop()
+
+
+        // console.log(names, 'pop')
+
+        // 2. using the shift --- if u want to delete the first one
+
+        // names.shift()
+
+
+        console.log(names, 'shift')
+
+
+        // how to delete the specific element using the index
+
+        // Array.splice(start index to delete, how many elements to delete, elements to add)
+
+
+        names.splice(1, 1, "sandeep")
+
+        console.log(names, 'names')
+
+
+
+
+        // deletion at specific element
+
+        names.splice(1, 1)
+
+
+
+        // replace the specific element
+
+        names.splice(1, 1, "sandeep")
+
+
+        // adding at specific element at specific position
+
+
+        names.splice(2, 0, "ashritha")
+
+        console.log(names, 'names')
+
+
+
+
+        /// number
+
+
+
+        // it will generate the random number from 0 to 1
+        console.log(Math.ceil(6*(Math.random())), 'random')
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

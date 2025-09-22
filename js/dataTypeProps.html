@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>data types properties and funtions</h1>
+
+
+    <script>
+
+
+        // properties-- - inbuilt it contains ---- non actionable ---- name , year 
+
+
+        // functions ---- actions --- moving , breaking ---- an external force is appling here
+
+
+        // string --- function and properties
+
+        let str = 'Hello World';
+
+        let str2 = 'how r u ?'
+
+        console.log(str.length, 'lenght')
+
+
+
+        // naming convections ---- rules on creating
+
+        // camel case --- firstword will be start with small letter, and next word start with capital letter
+
+
+        console.log(str.toUpperCase())
+
+        // console.log(str.toLowerCase())
+
+        console.log(str.charAt(4))
+
+        // 
+        console.log(str.includes('Wor'))
+
+
+        // first occurence of the character
+        console.log(str.indexOf('l'))
+
+        console.log(str.lastIndexOf('l'))
+
+
+        // cutting some part
+        // console.log(str.slice(start,end positon (excluded)))
+
+        console.log(str.slice(0, 4))
+
+
+        // adding two strings
+        console.log(str.concat(str2))
+
+
+        let str3 = '                  hello         world          '
+
+        console.log(str3.trim())
+
+        console.log(str3)
+
+
+
+        /// number 
+
+        let pi = 3.141513244
+
+
+        
+
+         
+
+        // 3  --- 3.5  ---- 3
+
+        // 3.6 --- 3.9  === 4
+
+
+
+        console.log(Math.round(pi))
+
+        console.log(Math.floor(pi), "floor")  // low value of it
+
+        console.log(Math.ceil(pi), "ceil") // high value of it
+
+        console.log(pi.toFixed(4),'limited to 2 decimal points')
+
+        /// objs 
+
+        const user = {
+
+            name : 'sadhik',
+
+            class : 10
+
+        }
+
+
+        console.log(user,'user')
+
+
+        // dot operator --- to get the value of the key
+        console.log(user.name,' is the name of the student belongs to ', user.class)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>
