@@ -11,19 +11,18 @@
 
 <body>
 
-
-    <h1 class="text-center">
+    <h1 class="text-center" id="heading">
         Todos Application
     </h1>
 
     <div class="d-flex justify-content-center align-items-center">
-        <input type="text" placeholder="enter the task">
+        <input type="text" placeholder="enter the task" id="inputTag">
 
-        <button class="btn btn-primary ms-2">add task</button>
+        <button class="btn btn-primary ms-2" onclick="addTask()">add task</button>
     </div>
 
-    <div class="d-flex flex-column justify-content-center align-items-center gap-2 my-2">
-
+    <div id="parent" class="d-flex flex-column justify-content-center align-items-center gap-2 my-2">
+        <!-- 
         <div>
 
             <input type="checkbox">
@@ -52,8 +51,116 @@
 
         </div>
 
+        <div>
+
+            <input type="checkbox">
+
+            <span>
+                task 3
+            </span>
+
+            <button class="btn btn-warning">Edit</button>
+
+            <button class="btn btn-danger">Delete</button>
+
+        </div> -->
+
 
     </div>
+
+
+    <script>
+
+        let todos = [
+            {
+                title: 'wake up at 6 am'
+            },
+
+            {
+                title: "go to movie"
+            }
+        ]
+
+        let parent = document.getElementById('parent');
+
+        let inputTag = document.getElementById("inputTag");
+
+        let heading = document.getElementById("heading")
+
+        console.log(heading.innerHTML, 'heading')
+
+        function showTodos() {
+
+            parent.innerHTML = ''
+
+            todos.forEach((ele, index) => {
+
+                let divTag = document.createElement("div");
+
+                divTag.innerHTML = `
+             <div class='d-flex align-items-center gap-2'>
+
+            <input type="checkbox">
+
+            <span>
+                ${ele.title}
+            </span>
+
+            <button class="btn btn-warning">Edit</button>
+
+            <button class="btn btn-danger" onclick='handleDelete(${index})'>Delete</button>
+
+        </div>`
+                parent.innerHTML = parent.innerHTML + divTag.innerHTML;
+            })
+
+
+        }
+
+
+        function addTask() {
+            console.log(inputTag.value, 'addtask is running');
+
+
+
+            if (inputTag.value.trim() !== '') {
+                todos.push({ title: inputTag.value })
+
+                console.log(todos, 'todos in the add task')
+
+                inputTag.value = ''
+
+                showTodos()
+
+
+            }
+
+
+
+
+        }
+
+
+
+        function handleDelete(index) {
+            console.log(index,'delete function')
+
+            // todos.splice(starting index to delete, how many ele to delete)
+
+            todos.splice(index,1);
+
+            console.log(todos,'todos in the deeter')
+
+            showTodos()
+        }
+        showTodos()
+
+
+
+
+
+
+    </script>
 
 
 

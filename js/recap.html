@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <style>
+
+    </style>
+</head>
+
+<body>
+
+
+
+    <h1 class="text-danger" id="h1tag">
+        this is h1 tag
+    </h1>
+
+
+    <input type="text" placeholder="enter name " id="input-tag" value="hemanth">
+
+
+
+    <header id="headerTag">
+
+        <div>
+            1st div
+        </div>
+
+    </header>
+
+
+    <script>
+
+        let h1tag = document.getElementById("h1tag");
+
+        let headerTag = document.getElementById('headerTag')
+
+
+
+
+        // for the html content (which is already exists), we will use the innerHtml
+        console.log(h1tag.innerHTML, 'h1 tag')
+
+
+        let inputTag = document.getElementById("input-tag");
+
+
+        // .value property is used for the input tags only
+
+        console.log(inputTag.value, 'input');
+
+
+
+        let divTag = document.createElement("div");
+
+
+        divTag.innerHTML = "sadhik"
+
+        console.log(divTag, 'divtag')
+
+        headerTag.innerHTML = headerTag.innerHTML + divTag.innerHTML
+
+        headerTag.innerHTML = ''
+
+
+
+
+
+
+
+
+
+
+
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
