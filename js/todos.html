@@ -73,11 +73,14 @@
 
         let todos = [
             {
-                title: 'wake up at 6 am'
+                title: 'wake up at 6 am',
+                completed : false
+                
             },
 
             {
-                title: "go to movie"
+                title: "go to movie",
+                completed : true
             }
         ]
 
@@ -100,13 +103,13 @@
                 divTag.innerHTML = `
              <div class='d-flex align-items-center gap-2'>
 
-            <input type="checkbox">
+            <input type="checkbox" ${ele.completed ? "checked" : "" } onchange="handleCheckbox(${index})">
 
-            <span>
+            <span class='${ele.completed ? "text-decoration-line-through" : "" }'>
                 ${ele.title}
             </span>
 
-            <button class="btn btn-warning">Edit</button>
+            <button class="btn btn-warning" onclick="handleEdit(${index})">Edit</button>
 
             <button class="btn btn-danger" onclick='handleDelete(${index})'>Delete</button>
 
@@ -121,10 +124,8 @@
         function addTask() {
             console.log(inputTag.value, 'addtask is running');
 
-
-
             if (inputTag.value.trim() !== '') {
-                todos.push({ title: inputTag.value })
+                todos.push({ title: inputTag.value, completed : false })
 
                 console.log(todos, 'todos in the add task')
 
@@ -136,7 +137,33 @@
             }
 
 
+        }
 
+
+        function handleCheckbox(index) {
+            console.log(index, todos,"todos")
+
+
+            let currentstatus = todos[index].completed
+
+
+            todos[index].completed = !currentstatus
+
+            showTodos()
+
+
+        }
+
+
+        function handleEdit(index) {
+
+           let updatedTitle = prompt("enter the updated data");
+
+           todos[index].title = updatedTitle;
+
+           showTodos()
+
+        
 
         }
 
